@@ -145,7 +145,7 @@
 
             async getEvents() {
                 const response = await fetch(
-                    `https://raw.githubusercontent.com/danadum/ggs-assets/main/${this.game}/events.json`,
+                    `https://raw.githubusercontent.com/TeeEff35/ggs-assets/refs/heads/main/${this.game}/events.json`,
                 );
                 this.events = await response.json();
                 if (!(this.current_event_name in this.eventsList)) {
